@@ -1,0 +1,49 @@
+.information {
+  height: 248px;
+  margin-bottom: 94px;
+
+&__list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 94px;
+  justify-content: center;
+  gap: 30px;
+}
+
+&__item {
+  width: 270px;
+}
+
+&__img-background {
+  width: 270px;
+  height: 120px;
+
+  background-color: $team-background-color;
+
+  margin-bottom: 30px;
+
+  border-radius: 4px;
+}
+
+&__img {
+  position: relative;
+  left: 100px;
+  top: 25px;
+
+  width: 65.32px;
+  height: 70px;
+
+  background-color: $team-background-color;
+}
+
+&__title {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  margin-bottom: 10px;
+}
+
+&__subtitle {
+  color: $third-text-color;
+}
+}
