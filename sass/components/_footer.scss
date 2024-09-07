@@ -76,7 +76,7 @@ margin-bottom: 20px;
   background: $third-text-color;
 
   @extend %flex-center;
-  @include sizes(44px, 44);
+  @include sizes(44px, 44px);
   border-radius: 50%;
 
   &:is(:hover, :focus) {
