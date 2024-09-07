@@ -1,15 +1,12 @@
 .customers {
-  width: 1170px;
-  height: 372px;
+  @include sizes(1170px, 372px);
   margin-left: 185px;
 
 &__name {
   padding-top: 94px;
   margin-bottom: 50px;
   color: $main-text-color;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: calc(42 / 36);
+  @include font(36px, 700, calc(42 / 36));
   text-align: center;
 }
 
@@ -20,8 +17,7 @@
 }
 
 &__item {
-  width: 170px;
-  height: 92px;
+  @include sizes(170px, 92px);
   box-sizing: border-box;
   border: 1px solid $third-text-color;
   border-radius: 4px;
@@ -29,16 +25,17 @@
 &:is(:hover, :focus) {
   cursor: pointer;
   border-color: $logo-color;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  @include transition(border, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 }
 
 &:is(:hover, :focus) .customers__svg {
   fill: $logo-color;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  @include transition(fill, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
   animation: tada;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
+  @include animation(tada, 1.5s, 1);
 }
 }
 
@@ -52,43 +49,27 @@
 }
 
 &__svg--first {
-  width: 46px;
-  height: 52.7px;
-  left: 35%;
-  top: 20%;
+  @include customers-svg-sizes(46px, 52.7px, 35%, 20%);
 }
 
 &__svg--second{
-  width: 48px;
-  height: 60px;
-  left: 35%;
-  top: 15%;
+  @include customers-svg-sizes(48px, 60px, 35%, 15%);
 }
 
 &__svg--third {
-  width: 43.46px;
-  height: 41.18px;
-  left: 37%;
-  top: 25%;
+  @include customers-svg-sizes(43.46px, 41.18px, 37%, 25%);
 }
 
 &__svg--fourth {
-  width: 124.44px;
-  height: 80.62px;
-  left: 15%;
-  top: 10%;
+  @include customers-svg-sizes(124.44px, 80.62px, 15%, 10%);
 }
 
 &__svg--fifth {
-  width: 77.54px;
-  height: 60.43px;
-  left: 25%;
-  top: 15%;
+  @include customers-svg-sizes(77.54px, 60.43px, 25%, 15%);
 }
 
 &__svg--sixth {
-  width: 153.79px;
-  height: 103.93px;
+  @include sizes(153.79px, 103.93px);
   left: 7%;
 }
 }

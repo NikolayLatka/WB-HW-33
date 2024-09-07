@@ -12,30 +12,23 @@
   margin-bottom: 94px;
 
 &--flex {
-  display: flex;
-  align-items: center;
+  @extend %flex-center;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
 }
 
 &__title {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: (calc(60 / 44));
+  @include font(44px, 900, calc(60 / 44));
   width: 696px;
   color: $main-background-color;
 }
 
 &__button {
   color: $second-text-color;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: calc(30 / 16);
+  @include font(16px, 700, calc(30 / 16));
   width: 216px;
   height: 50px;
   border-radius: 4px;
-  cursor: pointer;
   background: $logo-color;
   border: none;
   margin-top: 30px;

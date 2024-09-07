@@ -3,8 +3,9 @@
 @import "./utils/normalize";
 @import "./utils/container";
 @import "./utils/base";
-@import "./utils/h2";
-@import "./utils/portfolio";
+@import "./utils/visual-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 @import "./utils/modal";
 
 @import "./components/header";
@@ -14,5 +15,6 @@
 @import "./components/team";
 @import "./components/customers";
 @import "./components/footer";
+@import "./components/portfolio";
 @import "./components/sorting";
 @import "./components/projects";
